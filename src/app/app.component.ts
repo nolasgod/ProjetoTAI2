@@ -23,7 +23,17 @@ export class AppComponent {
     {
       title: 'Perfil',
       url: '/perfil',
-      icon: 'perfil'
+      icon: ''
+    },
+    {
+      title: 'Solicitar Serviço',
+      url: '/solicitar-servico',
+      icon: ''
+    },
+    {
+      title: 'Historico',
+      url: '/historico',
+      icon: ''
     }
   ];
 
