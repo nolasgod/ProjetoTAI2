@@ -17,7 +17,8 @@ const routes: Routes = [
   },  { path: 'perfil', loadChildren: './perfil/perfil.module#PerfilPageModule' },
   { path: 'solicitar-servico', loadChildren: './solicitar-servico/solicitar-servico.module#SolicitarServicoPageModule' },
   { path: 'historico', loadChildren: './historico/historico.module#HistoricoPageModule' },
-  { path: 'meus-atendimentos', loadChildren: './meus-atendimentos/meus-atendimentos.module#MeusAtendimentosPageModule' }
+  { path: 'meus-atendimentos', loadChildren: './meus-atendimentos/meus-atendimentos.module#MeusAtendimentosPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' }
 
 ];
 
