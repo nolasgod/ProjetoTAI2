@@ -23,22 +23,22 @@ export class AppComponent {
     {
       title: 'Perfil',
       url: '/perfil',
-      icon: ''
+      icon: 'person'
     },
     {
       title: 'Solicitar Serviço',
       url: '/solicitar-servico',
-      icon: ''
+      icon: 'construct'
     },
     {
       title: 'Historico',
       url: '/historico',
-      icon: ''
+      icon: 'bookmarks'
     },
     {
       title: 'Meus Atendimentos',
       url: '/meus-atendimentos',
-      icon: ''
+      icon: 'stats'
     }
   ];
 
