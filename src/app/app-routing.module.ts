@@ -16,7 +16,8 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },  { path: 'perfil', loadChildren: './perfil/perfil.module#PerfilPageModule' },
   { path: 'solicitar-servico', loadChildren: './solicitar-servico/solicitar-servico.module#SolicitarServicoPageModule' },
-  { path: 'historico', loadChildren: './historico/historico.module#HistoricoPageModule' }
+  { path: 'historico', loadChildren: './historico/historico.module#HistoricoPageModule' },
+  { path: 'meus-atendimentos', loadChildren: './meus-atendimentos/meus-atendimentos.module#MeusAtendimentosPageModule' }
 
 ];
 

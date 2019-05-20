@@ -34,6 +34,11 @@ export class AppComponent {
       title: 'Historico',
       url: '/historico',
       icon: ''
+    },
+    {
+      title: 'Meus Atendimentos',
+      url: '/meus-atendimentos',
+      icon: ''
     }
   ];
 
