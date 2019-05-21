@@ -7,13 +7,14 @@ import { LoginPage } from './login/login.page';
 
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
 
-  rootPage:any = LoginPage;
+  rootPage: any = LoginPage;
 
   public appPages = [
     {
