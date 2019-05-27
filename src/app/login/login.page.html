@@ -5,18 +5,19 @@
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div text-center>
-            <h3>Login</h3>
+            <h1>Login</h1>
           </div>
           <div padding>
             <ion-item>
-              <ion-input name="email" type="email" placeholder="Insira seu e-mail..." ngModel required></ion-input>
+              <ion-input type="email" [(ngModel)]="user.email" placeholder="Insira seu e-mail..."></ion-input>
             </ion-item>
+
             <ion-item>
-              <ion-input name="password" type="password" placeholder="Insira sua senha..." ngModel required></ion-input>
+              <ion-input type="password" [(ngModel)]="user.password" placeholder="Insira sua senha..."></ion-input>
             </ion-item>
           </div>
           <div padding>
-            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Entrar</ion-button>
+            <ion-button color="success" [disabled]="form.invalid" expand="block" size="large"> Entrar</ion-button>
           </div>
         </ion-col>
       </ion-row>

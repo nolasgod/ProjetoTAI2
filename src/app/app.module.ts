@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
+import { RouteReuseStrategy, Router } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -10,6 +10,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginPage } from './login/login.page';
 
+import { AngularFireModule } from "angularfire2";
+import { FIREBASE_CONFIG } from './app.firebase.config';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -17,7 +20,7 @@ import { LoginPage } from './login/login.page';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    LoginPage,
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
   ],
   providers: [
     StatusBar,
@@ -26,4 +29,8 @@ import { LoginPage } from './login/login.page';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+
+  
+
+}
